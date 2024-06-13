@@ -1,0 +1,252 @@
+
+.header h1{
+    background-color: rgb(1, 100, 1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+}
+
+.headerNav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+#main-menu{
+    background-color: rgb(8, 213, 8);
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu>li{
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+#main-menu> li > a{
+    display: inline-block;
+    padding: 13px;
+    /* top: 39px; */
+    /* left: 2px;
+     */
+    color: white;
+    text-decoration: none;
+}
+
+#main-menu> li > a:hover{
+    background-color: black;    
+}
+
+#parent-main-menu-item-2, #parent-main-menu-item-3{
+    position: relative;
+}
+
+#sub-menu1,#sub-menu2{
+    position: absolute;
+    background-color: whitesmoke;
+   
+    padding: 15px;
+    top: 45px;
+    left: 10px;
+   
+    white-space: nowrap;
+    z-index: 1;
+}
+
+#sub-menu1, #sub-menu2{
+    display: none;
+}
+#sub-menu1>li,#sub-menu2>li{
+   margin-bottom: 20px;
+  
+}
+
+#parent-main-menu-item-2:hover #sub-menu1{
+   display: block;
+}
+
+#parent-main-menu-item-3:hover #sub-menu2{
+   display: block;
+}
+
+footer{
+
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+}
+
+.imageSection{
+    border: 2px solid steelblue;
+    
+    max-width: 100%;
+    height: 550px;
+    background-image: url("Images/Animation/ani2.png");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;   
+    z-index: 0;
+
+    animation-name: change;
+    animation-direction: forwards;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  
+}   
+
+@keyframes change {
+    0% 
+    {
+        background-image: url("Images/Animation/ani2.png");
+    }
+    20% 
+    {
+        background-image: url("Images/Animation/ani1.jpg");
+        opacity: 1;
+    }
+    40% 
+    {
+        background-image: url("Images/Animation/ani3.jpg");
+        opacity: 1;
+    }
+    60%
+    {
+        background-image: url("Images/Animation/ani4.jpg");
+        opacity: 1;
+    }
+    80%
+    {
+        background-image: url("Images/Animation/ani5.jpg");
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+       
+    }   
+    100%{
+        display:none;
+    }   
+}
+
+
+body{
+    max-width:100%;
+    margin:0;
+    max-height:100%;
+}
+
+
+.container{
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding:0;
+    animation-name: show 10s forwards;
+    animation-delay: 10s;
+    position:relative;
+}
+
+
+
+
+
+.product-img{
+    background: lavender;
+    max-width: 200px;
+    max-height: 100px;
+    margin: 0 auto;
+
+}
+.product-content{
+    background: lavender;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    cursor: pointer;
+ 
+ 
+}
+.product{
+    margin: 2rem;
+    position: relative;
+    background-color: lavender;
+
+}
+
+p{
+   font-size: 1rem;
+   color: blue;
+   padding-left:10px;
+   padding-top: 0;
+   padding-bottom:0;
+   line-height: 5px;
+}
+
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    opacity: 1;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.btn-cart{
+    background: lavender;
+    border: 2px blue;
+    border-style:solid;
+   padding: 5px;
+    width: 200px;
+    color: orange;
+    border-radius: 8px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-cart:hover{
+    background-color: rgb(250, 234, 230) ;
+    border-color: rgb(0, 255, 76);
+}
+
+.product-img img{
+    transition: transform: transform 0.6s ease;
+    max-height:80px;
+    width: 200px;
+}
+
+.product:hover .product-img{
+    transform: scale(1.1);
+}
+
+.product{
+    display: inline-block;  
+    padding: 8px;
+}
+
+h3{
+    padding-left: 10px;
+    margin:0;
+}
+
+.footer{
+    text-align: left;
+}

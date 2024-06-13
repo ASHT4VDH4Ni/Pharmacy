@@ -1,0 +1,140 @@
+.main{
+   
+   padding:0;
+   margin:0;
+ 
+}
+.container{
+  
+    max-height: 450px;
+    max-width: 950px;
+    min-height: auto;
+    margin-top: 5%;
+    margin-left: 10%;   
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style:groove;
+    overflow-y: scroll;
+    display: inline-flex;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 3px 3px #ccc;
+}
+
+.container .labtest-image{
+    flex:1 1 1rem;
+}
+.container .labtest-image img{
+    width: 100%;  
+}
+.labtest-image{
+    max-width: 450px;
+    max-height: 450px;
+    position: sticky;
+    top: 0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container .labtest-section{
+    flex:1 1 1rem;
+}
+.container .labtest-section .form-details{
+    width: 100%;  
+}
+.form-details{
+    max-width: 480px;
+    float: left;
+}
+
+.btn{
+    height: 50px;
+    width: 280px;
+    position: relative;
+     margin-left: 35%;
+    align-content: center;
+    text-align: center;
+}
+.btn>input{
+     display: inline-block;
+    margin-top: 15px;   
+    padding-inline: 7px;
+    background-color: red;
+    color: white;
+    max-width: 80px;
+    border:none;
+    padding: 4px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: medium;
+    position: relative;
+    
+  justify-content: center;
+}
+.info-section{
+    padding: 15px;
+}
+
+#district{
+    padding: 8px;
+    font-size: medium;
+    width: auto;
+    font-family: 'Times New Roman', Times, serif
+}
+
+input{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        outline: 2;
+        border-width: 0 0 1px;
+        border-color: grey;
+        padding: 10px;   
+        max-width: fit-content;
+}
+p{
+    margin:0;
+}
+#testDate{
+    border-style:solid;
+}
+span{
+    color: red;
+   font-size: small;
+}
+
+h3,h4{
+    padding-top:15px;
+    padding-bottom: 10px;
+    margin:0;
+}
+.test-options{
+    margin: 10px;
+    padding-top: 10px;
+    
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+.btn {
+    background-color: lightblue;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease all; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  }
+  .btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px);
+  }
+  

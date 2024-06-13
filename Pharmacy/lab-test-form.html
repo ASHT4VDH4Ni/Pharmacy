@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" type="text/css" href="labtest-page.css">
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="container">
+
+                <div id="lab-test-form"class="labtest-section"> 
+                    <form class="form-details">
+                        <div class="info-section">
+                            <h3>1. Your Contact Details</h3>
+                            <input type="text" id="fullName" placeholder="Full Name" maxlength="32" >
+                            <input type="number" id="patientIdifexists" placeholder="Patient Id if exists" maxlength="8" >
+                            
+                            <input type="number" id="contactNumber" placeholder="Contact Number" maxlength="10" >
+                            <input type="email" id="emailId" placeholder="Email id" maxlength="30" >
+                            </div>
+                        <div class="info-section">
+                            <h3>2.	Address</h3>
+                            <input type="text" id="address" placeholder="H No" maxlength="50" >
+                            <input type="text" id="street" placeholder="Street" maxlength="30" >
+                            
+                            <input type="text" id="area" placeholder="Area" maxlength="50" >
+                        </div>
+                        <div class="info-section">
+                            <label><b>District</b></label>
+                            <br>
+                            <br>
+                            <Select id="district" placeholder="District" >
+                                <option value selected disabled>Choose</option>
+                                <option value="Mu" >Mumbai</option>
+                                <option value="Pu" >Pune</option>
+                                <option value="Ga" >Goa</option>
+                            </Select>
+                        </div>
+                        <div class="info-section">
+                            <h3>3. Book Lab Tests</h3>
+                            <h4>Choose the Test Type </h4>
+                            <span class="closebtn" > Check atleast one box without fail.</span>
+                            <br>
+                            <input type="checkbox" id="test1" class="test-options" value="CBC">
+                            <label>CBC</label>
+                            <input type="checkbox" id="test2" class="test-options" value="Complete Urine">
+                            <label>Complete Urine</label>
+                            <input type="checkbox" id="test3" class="test-options" value="Lipid Profile">
+                            <label>Lipid Profile</label>
+                            <br>
+                            <input type="checkbox" id="test4" class="test-options" value="Thyroid Stimulating Hormone">
+                            <label>Thyroid Stimulating Hormone</label>
+                            <input type="checkbox" id="test5" class="test-options"  value="Glucose Test">
+                            <label>Glucose Test</label>
+                    
+                            <h4>Do you want a hard copy of the report also?</h4>
+                            <input type="radio" id="hardCopy_yes" value="Yes">
+                            <label>Yes</label>
+                            <input type="radio" id="hardCopy_no" value="No">
+                            <label>No</label>
+                    
+                            <h4>Select Your Comfortable Date and Time</h4>
+                            <input type="date" id="testDate" name="test_Date">
+                       
+                         </div>
+                    </form>
+                </div>
+               
+                <div class="labtest-image">  
+                    <img src="Images/Lab-Test/lab-test.jpg">
+                </div>
+                
+            </div>
+            <div class="btn">
+                <input class="btn" type="reset" value="Reset" >
+                <input class="btn" type="submit" value="Submit">
+                <!-- <form class="btn" id="">
+                    <button type="submit">Submit</button>
+                  </form> -->
+                <!-- <script>
+                    document.getElementById("myForm").addEventListener("submit", function(event) {
+                     this.submit(); 
+                      window.close();
+                     });
+                 </script> -->
+            </div>
+        </div> 
+    </body>
+</html>
